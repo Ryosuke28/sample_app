@@ -8,13 +8,13 @@
       
       <%= hidden_field_tag :email, @user.email %>
       
-      <%= f.label :password %>
+      <%= f.label :password, "パスワード" %>
       <%= f.password_field :password, class: 'form-control' %>
       
-      <%= f.label :passowrd_confirmation, "Confirmation" %>
+      <%= f.label :passowrd_confirmation, "パスワード(確認)" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
       
-      <%= f.submit "Update password", class: "btn bnt-primary" %>
+      <%= f.submit "パスワード更新", class: "btn bnt-primary" %>
     <% end %>
   </div>
 </div>
